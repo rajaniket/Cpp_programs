@@ -43,7 +43,7 @@ s.at(i)='0';
 void binary :: display()
 {
 cmpl();
-cout<<"the one's compliment of given binary number "<<k<<" is :"<<s<<"\n\n\n";
+cout<<"the one's compliment of given binary number is "<<k<<" is :"<<s<<"\n\n\n";
 }
 int main()
 {
