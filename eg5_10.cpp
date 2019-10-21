@@ -1,5 +1,4 @@
 //swapping of private data of classes 
-
 #include<iostream>
 using namespace std;
 class s2;
@@ -45,7 +44,7 @@ b.getdata(30);
 cout<<"Before exchange"<<endl;
 a.display();
 b.display();
-  exchange(a,b);
+exchange(a,b);
 cout<<"Afte:exchange"<<endl;
 a.display();
 b.display();
