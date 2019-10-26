@@ -1,29 +1,29 @@
-#include <bits/stdc++.h>
-#include <string>
+//write a program to find super digit (method-1 using recursion)
+/* super_digit(9875) = super_digit(9+8+7+5) 
+= super_digit(29) 
+= super_digit(2+9)
+= super_digit(11)
+= super_digit(1+1)
+= super_digit(2)
+= 2     */
+
 #include <iostream>
-#include <math.h>
-
 using namespace std;
-
-int superDigit(string n, int k)
-{
-    int res=0;
-    for (int x = 0; x < n.length(); x++)
-    {
-        res += n[x] - '0';
-    }
-    res = k * res;
-    if (res < 10)
-        return res;
-    else
-        return superDigit(to_string(res),1);
+int super_digit(int a){
+int k,l=0;
+if(a<10)
+    return a;
+while(a!=0){
+k=a%10;
+a=a/10;
+l=l+k;
 }
-
-int main() {
-    string n;
-    int k;
-    cin >> n;
-    cin >> k;
-    cout << superDigit(n, k)<< endl;
-    return 0;
+super_digit(l);
+}
+int main(){
+cout<<"Type Number"<<endl;
+int k,m;
+cin>>k;
+m=super_digit(k);
+cout<<"Super digit : "<<m;
 }
