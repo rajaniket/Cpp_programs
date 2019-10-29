@@ -1,3 +1,4 @@
+//example of dynamic initialization of objects,fixed deposite
 #include<iostream>
 using namespace std;
 class fixed_deposit{
@@ -12,7 +13,7 @@ cout<<"Principal amount= "<<pa<<endl;
 cout<<"Return value= "<<retvalue<<endl;
 }
 };
-fixed_deposit(int P,int y,float r=0.12){
+fixed_deposit :: fixed_deposit(int P,int y,float r){
 years=y;
 pa=P;
 rate=r;
@@ -21,7 +22,7 @@ for(int i=0;i<y;i++){
 retvalue=retvalue * (1+r);
 }
 }
-fixed_deposit(int P,int y,int r){
+fixed_deposit :: fixed_deposit(int P,int y,int r){
 years=y;
 pa=P;
 rate=r;
@@ -31,7 +32,7 @@ retvalue=retvalue * (1+ float (r)/100);
 }
 }
 int main(){
-fixes_deposit a,b,c;
+fixed_deposit a,b,c;
 int p,y,R;
 float r;
 cout<<"Enter amount, period,interest rate(in %)"<<endl;
