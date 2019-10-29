@@ -1,15 +1,22 @@
+overloaded constructor example, sum of two complex number.
 #include<iostream>
 using namespace std;
-class complex(){
+class complex {
 float r,l;
 public:
-complex(){r=0; i=0;}
-complex(int a){r=l=a;}
-complex(int a,int b){r=a; l=b}
-void display(){
-cout<<r<<"+ j"<<i<<endl;
+complex(){
+r=0;
+l=0;
 }
-friend complex sum(complex);
+complex(float a){r=l=a;}
+complex(float a,float b){
+r=a;
+l=b;
+}
+void display(){
+cout<<r<<"+j"<<l<<endl;
+}
+friend complex sum(complex f,complex g);
 };
 complex sum(complex f,complex g){
 complex temp;
@@ -23,7 +30,7 @@ complex a(2,5.5);
 complex b(6.6);
 complex c;
 c=sum(a,b);
-cout<<"a ="<<a.display();
-cout<<"b ="<<b.display();  
-cout<<"c ="<<c.display();  
+a.display();
+b.display();
+c.display();
 }
