@@ -1,34 +1,26 @@
-//decimal to hexa decimal.
-#include<iostream.h>
-#include<conio.h>
-void main()
-{
-	clrscr();
-	long int decnum, rem, quot;
-	char hexdecnum[100];
-	int i=1, j, temp;
-	cout<<"Enter any decimal number : ";
-	cin>>decnum;
-	quot=decnum;
-	while(quot!=0)
-	{
-		temp=quot%16;
-		// to convert integer into character
-		if(temp<10)
-		{
-			temp=temp+48;
-		}
-		else
-		{
-			temp=temp+55;
-		}
-		hexdecnum[i++]=temp;
-		quot=quot/16;
-	}
-	cout<<"Equivalent hexadecimal value of "<<decnum<<" is : \n";
-	for(j=i-1; j>0; j--)
-	{
-		cout<<hexdecnum[j];
-	}
-	getch();
+//Conversion of hexadecimal number to decimal
+#include<iostream>
+using namespace std;
+void HtoD(int a){
+int b,i=0;
+char c[10];
+while(a!=0){
+    b=a%16;
+    a=a/16;
+    if(b<10)
+    c[i]=(b+48);
+    else
+    c[i]=(b+55);
+    i++;
+
+}
+for(int k=(i-1);k>=0;k--){
+
+        cout<<c[k];
+}
+
+}
+int main(){
+int a=32;
+HtoD(a);
 }
