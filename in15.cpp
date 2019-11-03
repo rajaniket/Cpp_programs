@@ -1,3 +1,5 @@
+//find out greatest among three using conditional operator
+
 #include <iostream>
 using namespace std;
 float comp(float a,float b,float c){
