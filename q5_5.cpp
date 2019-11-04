@@ -1,8 +1,10 @@
 // two classes dm and db which stores the value of distance, dm in meters and centimeters & db in feet and inches.
 //add one object of dm with object of db and show result.
+
+
 #include<iostream>
 using namespace std;
-class db;
+class db;     // defining the class on the top, becaused it is used in class dm 
 class dm{
 float x;
 public:
