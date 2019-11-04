@@ -1,4 +1,4 @@
-
+//Evaluate sin(x)=x-x^3/3!+x^5/5!........... to 0.0001% accuracy
 
 #include<iostream>
 #include<math.h>
