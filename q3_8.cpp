@@ -1,4 +1,6 @@
- #include<iostream>
+//Print a table of values of the function y=e^-x , for x varying from 0 t0 10 in step of 0.1 
+
+#include<iostream>
  #include<math.h>
  using namespace std;
  int main(){
