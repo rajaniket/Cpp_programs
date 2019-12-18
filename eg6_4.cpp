@@ -1,3 +1,4 @@
+//Example based on copy constructor
 #include<iostream>
 using namespace std;
 class code {
@@ -5,7 +6,7 @@ int id;
 public:
     code(){id=0;}
     code(int x){id=x;}
-    code(code &t){id=t.id;} // we can use code(const code &t), it safe the object from being modified accidentally
+    code(code &t){id=t.id;} // (copy constructor) we can use 'code(const code &t)', it safe the object from being modified accidentally
     int display(){
     int x;
     x=id;
