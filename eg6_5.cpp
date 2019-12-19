@@ -1,4 +1,4 @@
-// Dynamic constructor (constructor with new)
+// Dynamic constructor example (constructor with new)
 #include<iostream>
 #include<cstring>
 using namespace std;
@@ -9,7 +9,7 @@ public:
     str(){
         len=0;
     name=new char[len+1];}
-str(char *s){
+str(char *s){   //constructor using new
 len=strlen(s);
 name=new char[len];
 strcpy(name,s);
