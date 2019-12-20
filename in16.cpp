@@ -1,3 +1,5 @@
+//Example based on allocation and deallocation of memory
+//Example of dynamic 1-d Array
 #include <iostream>
 using namespace std;
 int main()
