@@ -1,3 +1,4 @@
+// Example on Dynamic allocation of 2-Dimensional array
 #include <iostream>
 using namespace std;
 int main (){
