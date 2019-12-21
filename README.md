@@ -1,2 +1,2 @@
 # CPP_programs
-This Repository contains various cpp programs which i practised.
+This Repository contains various type of C++ programs which i practised.
