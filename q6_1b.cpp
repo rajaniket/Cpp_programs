@@ -1,3 +1,4 @@
+//Represent a vector use constructor (Include member function to perform modification,multiplication by scalar,addition of two vectors)
 #include <iostream>
 using namespace std;
 class vector{
