@@ -1,3 +1,5 @@
+//Conversion of string into character array
+// c_str() function is used for converting string to character array
 #include <iostream>
 #include<string.h>
 #include<string>
