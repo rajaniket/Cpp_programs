@@ -1,3 +1,4 @@
+//opening and writing data in csv (excel) file
 #include <iostream>
 #include <fstream>
 using namespace std;
