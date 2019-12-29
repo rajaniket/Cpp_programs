@@ -1,3 +1,4 @@
+// reading data from a text files and showing it 
 #include <iostream>
 #include <fstream>
 using namespace std;
