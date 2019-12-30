@@ -1,3 +1,4 @@
+//check a number is prime number or not using constructor
 #include <iostream>
 #include <math.h>
 using namespace std;
