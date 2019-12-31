@@ -1,3 +1,5 @@
+//example of overloading a unary operator using member function
+// unary minus operator 
 #include<iostream>
 using namespace std;
 class abc{
