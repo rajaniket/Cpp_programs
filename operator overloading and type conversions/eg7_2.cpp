@@ -1,3 +1,6 @@
+//overloading binary operator
+//sum of two complex number using + sign
+
 #include<iostream>
 using namespace std;
 class Complex{
