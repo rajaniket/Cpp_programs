@@ -1,4 +1,5 @@
-
+//Inside string data type
+//how string is made using char and class
 #include<iostream>
 #include<string.h>
 using namespace std;
