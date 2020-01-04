@@ -1,19 +1,16 @@
+// initialization of arrays
 #include <iostream>
-#include <math.h>
 using namespace std;
 int main(){
 int a[5]={0};//or
-int a1[5]={};
-int b[5]={5};
+int a1[5]={};  // all elements will be 0
+int b[5]={5}; // only first element will be 5 and all other will be 0
 
-int c[5]={5,5,5,5,5}; //or
+int c[5]={5,5,5,5,5}; 
 int d[]={5,5,5,5,5};
 
-int e[5]={5,5,5};
-
-//int f[5]={[0 ... 4]=5}; //or ignore size f[]
-//int g[11]={[0 ... 3]=4,[4]=8,[5]=12,[8 ... 10]=16};
-
+int e[5]={5,5,5}; //remaining all will be zero 
+   // or initialization using loop 
 for(int i=0;i<5;i++){
     cout<<a[i]<<"\t";
 }
