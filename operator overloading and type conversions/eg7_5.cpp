@@ -1,3 +1,5 @@
+// overloadding of a subscript operator
+// accessing private member of class through [] operator
 #include<iostream>
 #include<fstream>
 using namespace std;
