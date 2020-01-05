@@ -1,3 +1,4 @@
+//overloading of pointer to member operator to access members of pointer and non pointer object
 #include <iostream>
 using namespace std;
 class xyz{
