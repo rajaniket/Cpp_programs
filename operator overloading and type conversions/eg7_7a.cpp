@@ -1,3 +1,4 @@
+//Class to basic type conversion 
 #include <iostream>
 using namespace std;
 class abc{
