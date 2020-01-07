@@ -1,5 +1,9 @@
+// example on one class to another class type conversion
+// using casting operator function which return destination class object and should be define inside source class
 #include <iostream>
 using namespace std;
+// Taking ABCD as a source class, and we are defining it over abc ,because in class abc is needed it and exact size and other things will required intially
+// That's why we are defining abcd instead of declearing in it on top; 
 class abcd{
 int b;
 public:
@@ -18,7 +22,7 @@ operator int(){
 return a;}
 
 operator abcd(){
-abcd temp(a*a);
+abcd temp(a*a); // we cant do this --> temp.b=a ,because b is private thats why i initialized it using constructure indirectly => b=a^2
 return temp;
 }
 
