@@ -1,3 +1,5 @@
+// inventory of products in store
+// conversion of one class to another class using constructor
 #include <iostream>
 using namespace std;
 class type1{
