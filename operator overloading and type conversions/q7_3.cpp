@@ -42,11 +42,11 @@ else cout<<"! Matrix size must be same for addition and subtraction"<<endl;
 mat operator*(mat a){
 if(column==a.row){
 mat temp(row,a.column); //column=a.row;
-for(int i=0;i<row;i++){
-    for(int j=0;j<column;j++){
-        for(int k=0;k<a.column;i++){
-    temp.p[i][k]=temp.p[i][k]+p[i][j]*a.p[j][i];}}}
-    return temp;
+for(int i=0;i<row;i++)
+for(int k=0;k<a.column;k++)
+for(int j=0;j<column;j++)
+temp.p[i][k]=temp.p[i][k]+((p[i][j])*(a.p[j][k]));
+return temp;
 }
 else cout<<"! Column of 1st Matrix and Row of 2nd Matrix must be same for multiplication"<<endl;
 }
@@ -59,14 +59,14 @@ for(int i=0;i<k.row;i++){
     qin>>k.p[i][j];}}
     return qin;
 }
-ostream & operator<<(ostream &qout,mat &k){
+ostream & operator <<(ostream &qout,mat &k){
 for(int i=0;i<k.row;i++){
     for(int j=0;j<k.column;j++){
     qout<<k.p[i][j];}cout<<endl;}
     return qout;
 }
 int main(){
-mat a(2,2),b(2,2),c;
+mat a(3,2),b(2,2),c;
 cout<<"Enter elements of 1st matrix"<<endl;
 cin>>a;
 cout<<a;
