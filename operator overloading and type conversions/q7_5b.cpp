@@ -1,3 +1,6 @@
+//Define two classes Polar and Rectangle to represent points in the polar and rectangle systems. 
+//Use conversion routines to convert from one system to the other.
+//method use=> constructor
 #include"iostream"
 #include"math.h"
 using namespace std;
