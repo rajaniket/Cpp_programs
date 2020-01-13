@@ -1,3 +1,4 @@
+//compare two fractional numbers by overloading the relational operator(==,!=,>=,<=)
 #include"iostream"
 #include"math.h"
 using namespace std;
