@@ -16,7 +16,7 @@ void add(vector a);
 void vector::getvector(){
 cout<<"Enter the size of a vector"<<endl;
 cin>>size;
-//v=new float[size] {0}; if we define this at here  , due to this in add() function shows segmentation fault, we are trying to save added data into t.v[i], but
+//v=new float[size] {0}; if we define this at here , due to this in add() function shows segmentation fault, we are trying to save added data into t.v[i], but
 // actually v=new float[size] is defined in member function ,so it can't be store in  t.v[i] .
 cout<<"Type vector elements one by one"<<endl;
 for(int i=0;i<size;i++)
@@ -69,8 +69,6 @@ t.size=j;
 //float *g=new float[j]; we can also do this
 for(int i=0;i<j;i++){
 t.v[i]=v[i]+a.v[i]; }
-//for(int i=0;i<j;i++)
-//cout<<t.v[i]<<" ";
 t.display();
 }
 int main(){
