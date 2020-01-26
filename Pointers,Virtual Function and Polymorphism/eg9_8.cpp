@@ -1,6 +1,8 @@
- #include<iostream>
- using namespace std;
+//Pointers to Object example
+#include<iostream>
+using namespace std;
 class item{
+    public:
 int code;
 float price;
 public:
@@ -8,20 +10,24 @@ public:
      code=a;price=b;
     }
     void show(){
-    cout<<"code: "<<code<<endl<<"Price : "<<price<<endl;
+    cout<<"code  : "<<code<<endl<<"Price : "<<price<<endl;
     }
 };
 int main(){
-item *p=new item[2];
+    cout<<"Enter how many items"<<endl;
+    int n;
+    cin>>n;
+item *p=new item[n];
 int x;
 float y;
-for(int i=0;i<=1;i++){
+for(int i=0;i<=n-1;i++){
   cout<<"Type code and price"<<endl;
   cin>>x>>y;
   p->get_data(x,y);
   p++;
 }
-for(int i=0;i<=1;i++){
+p-=n;   // Reseting the p address because in upper loop it is not referenced to initial
+for(int i=0;i<=n-1;i++){
 p->show();
 p++;
 }
