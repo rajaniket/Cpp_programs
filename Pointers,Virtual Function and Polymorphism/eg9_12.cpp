@@ -1,23 +1,36 @@
+// Virtual function
 #include<iostream>
 using namespace std;
-//Parent class or super class or base class
-class Animal{
-public:
-  virtual void animalSound(){
-      cout<<"This is a generic Function";
-   }
+class base{
+    public:
+    void show(){
+    cout<<"Show base"<<endl;
+    }
+    virtual void display(){
+    cout<<"Display base"<<endl;
+    }
 };
-//child class or sub class or derived class
-class Dog : public Animal{
+
+class derived:public base{
 public:
-  virtual void animalSound(){
-      cout<<"Woof";
-   }
+    void show(){
+    cout<<"Show Derived"<<endl;
+    }
+    void display(){
+    cout<<"Display Derived"<<endl;
+    }
 };
+
 int main(){
-   Animal *obj;
-   obj = new Dog;
-   obj->animalSound();
-   Animal::obj->animalSound();
-   return 0;
+    base *ptr;    // run time polymorphism is achieved only when a virtual function is accessed through pointer to base class;
+    base a;
+    derived b;
+
+    ptr=&a;
+    ptr->show();
+    ptr->display();
+   cout<<"\nptr points to derived object\n"<<endl;
+    ptr=&b;
+    ptr->show();
+    ptr->display(); //=> will show "Display Derived" because of virtual function ,if virtual function is not present there then it will show "Display base"
 }
