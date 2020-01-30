@@ -25,19 +25,26 @@ public:
     cout<<"Pages: "<<pages<<endl;
     }
 };
-class book:public media{
+class tape:public media{
 protected:
-    int pages;
+    float time;
 public:
-    book(string t,float p,int g):media(t,p){
-    pages=g;
+    tape(string j,float p,float g):media(j,p){
+    time=g;
     }
     void display(){
     cout<<"Title: "<<title<<endl;
     cout<<"Price: "<<price<<endl;
-    cout<<"Pages: "<<pages<<endl;
+    cout<<"Time : "<<time<<endl;
     }
 };
 
-
 int main(){
+    book b("HC Verma",125.50,355);
+    tape t("Love",50,45);
+    media *a[2]={&b,&t};
+    cout<<"................................Book.............................."<<endl;
+    a[1]->display();
+    cout<<"\n...............................Tape.............................."<<endl;
+    a[2]->display();
+}
