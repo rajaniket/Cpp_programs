@@ -27,3 +27,15 @@ cout<<endl;
 sort(arr,arr+5);  // sorted according to alphabetically (lexicographically)
 for(int i=0;i<5;i++){
     cout<<arr[i]<<",";
+    }
+cout<<endl;
+sort(arr,arr+5,rev_sort);
+for(int i=0;i<5;i++){
+    cout<<arr[i]<<",";
+}
+cout<<endl;
+sort(arr,arr+5,len_sort);
+for(int i=0;i<5;i++){
+    cout<<arr[i]<<",";
+}
+}
