@@ -15,3 +15,13 @@ for(int i=0;i<strlen(arr);i++)
 {
     store[check[i]-'a']--;
 }
+int k=0;
+for(int i=0;i<26;i++){
+    if(store[i]!=0)
+        k++;
+}
+if(k==0) cout<<check<<" Is a permutation of "<<arr<<endl;
+else cout<<"Not a permutation of "<<arr<<endl;
+}
+else cout<<"Not a permutation of "<<arr<<endl;
+}
