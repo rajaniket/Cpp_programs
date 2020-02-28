@@ -31,6 +31,8 @@ int main(){
 char a[]={"Hi,My name is Aniket, My roll number is 31"};
 char *p;
 p=mystrtok(a,",");
-
+while(p!=NULL){
+cout<<p<<endl;
+p=mystrtok(NULL,",");
 }
 }
