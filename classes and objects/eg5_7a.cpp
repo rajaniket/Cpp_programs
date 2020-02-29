@@ -1,8 +1,6 @@
 // using objects as argument add two time to get new time
  //(only Pass Object from the Function with no return type)
-
 #include<iostream>
-#include<bits/stdc++.h>
 using namespace std;
 class Time {
 int hours,minutes;
