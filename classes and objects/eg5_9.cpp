@@ -2,7 +2,7 @@
 
 #include<iostream>
 using namespace std;
-class s2;
+class s2; // class s2 must be declare on top if you u are using it in some class
 class s1
 {
 int data;
