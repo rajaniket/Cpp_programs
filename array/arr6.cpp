@@ -38,4 +38,14 @@ int main(){
             max_left[0]=a[0];
             max_right[n-1]=a[n-1];
         for(int i=1;i<n;i++){
-
+         max_left[i]=max(max_left[i-1],a[i]);  // max from left
+         max_right[(n-1)-i]=max(max_right[(n-1)-(i-1)],a[(n-1)-i]);
+	    }
+        int sum=0;
+        cout<<endl;
+        for(int i=0;i<n;i++){
+           sum+=(min(max_right[i],max_left[i])-a[i]);
+        }
+        cout<<sum;
+    }
+}
