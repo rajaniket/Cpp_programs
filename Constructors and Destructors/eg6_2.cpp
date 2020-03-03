@@ -8,7 +8,7 @@ complex(){
 r=0;
 l=0;
 }
-complex(float a){r=l=a;}
+complex(float a){r=l=a;} //overloading constructors
 complex(float a,float b){
 r=a;
 l=b;
