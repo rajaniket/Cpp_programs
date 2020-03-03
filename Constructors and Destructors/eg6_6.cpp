@@ -9,7 +9,7 @@ class matrx{
 public:
 matrx(int r,int c){
 m=r; n=c;
-p=new int*[m];
+p=new int*[m]; //2d matrix
 int i,j;
 for(i=0;i<m;i++){
     p[i]=new int[n];
@@ -19,7 +19,7 @@ void getmatrx(int k,int l,int value)
     p[k][l]=value;
 
 }
-int & putelement(int h,int j){
+int & putelement(int h,int j){ 
 return p[h][j];
 }
 };
