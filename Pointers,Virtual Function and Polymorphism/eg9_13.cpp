@@ -9,7 +9,7 @@ protected:
     media(string t,float p){
     title=t;price=p;
     }
-    virtual void display(){}
+    virtual void display(){} // It should be definedin base class
 };
 
 class book:public media{
