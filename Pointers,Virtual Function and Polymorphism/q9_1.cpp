@@ -20,7 +20,7 @@ public:
     void get_data(double h,double w){
     height=h;width=w;
     }
-    virtual double area()=0;
+    virtual double area()=0; // virtual function should declear inside base class
 
 };
 class rectangle:public shape{
