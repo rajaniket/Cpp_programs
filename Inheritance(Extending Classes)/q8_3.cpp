@@ -7,7 +7,7 @@ and when required. (balaguruswamy question number 8.3 in chapter 8)
 
 #include<iostream>
 using namespace std;
-class staff{
+class staff{ // base class
 protected:
     int code;
     staff(int c){code=c;}
