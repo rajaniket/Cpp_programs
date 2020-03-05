@@ -18,7 +18,7 @@ public:
     cout<<"Sub1="<<sub1<<"   "<<"Sub2="<<sub2<<endl;
     }
 };
-class sports:virtual public student{
+class sports:virtual public student{ // virtual need to defined otherwise duplicity occurs
 protected:
     float score;
 public:
