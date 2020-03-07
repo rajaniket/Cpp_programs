@@ -9,8 +9,8 @@ int main() {
 	string s1="105.77",k;
 	int i;
 	float j;
-	 i=stoi(s);    // conversion of string to integer
-     j=stof(s1);   // conversion of string to float
+	 i=stoi(s);    // stoi() ==> used for conversion of string to integer
+     j=stof(s1);   // stof() ==> used for conversion of string to float
      k=to_string(j); // conversion of int/float to string
     cout <<i<<"\n"<<j<<endl<<k;;
 
