@@ -7,7 +7,7 @@
 using namespace std;
 
 int string_find(string s1,string s){
-transform(s.begin(), s.end(), s.begin(),::tolower);      
+transform(s.begin(), s.end(), s.begin(),::tolower);     //STL
 transform(s1.begin(), s1.end(), s1.begin(),::tolower);
 cout<<s1<<endl<<s<<endl;
 int i=s1.find(s);
