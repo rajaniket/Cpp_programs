@@ -26,7 +26,7 @@ matrix transmatrix(matrix z){
 matrix temp;
 for(int i=0;i<3;i++)
 for(int j=0;j<3;j++) 
-temp.m[i][j]=z.m[j][i];
+temp.m[i][j]=z.m[j][i]; // interchanging row & col
 return temp;
 }
 int main(){
