@@ -8,8 +8,8 @@ complex(){
 r=0;
 l=0;
 }
-complex(float a){r=l=a;}
-complex(float a,float b){
+complex(float a){r=l=a;}  //
+complex(float a,float b){  // overloading constructors
 r=a;
 l=b;
 }
