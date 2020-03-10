@@ -46,7 +46,7 @@ cout<<"Type the location which you want to delete"<<endl;
 cin>>d;
 d--;
 for(int i=d;i<size;i++)
-v[i]=v[i+1];
+v[i]=v[i+1]; // shifting the element
 size--;
 display();
 }
