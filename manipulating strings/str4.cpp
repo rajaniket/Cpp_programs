@@ -11,6 +11,6 @@ int main()
    int j;
    j=p->length(); // here pointer object calling its member function
    cout<<*p<<endl<<*k<<endl<<j;
-   p->append(*k);
+   p->append(*k); // for concatenating 
    cout<<endl<<*p;
 }
