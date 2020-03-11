@@ -1,14 +1,13 @@
 // nesting of member function, using one display function call others functions automatically
 //ones compliment of given binary number
 
-
 #include<iostream>
 #include<string>
 using namespace std;
 class binary {
       string s,k;
       public:
-      void read()
+ void read()
 {
 cout<<"type the binary number"<<endl;
 cin>>s;
@@ -22,7 +21,7 @@ void binary :: chk()
 int i;
 for(i=0;i<s.length();i++)
 {
-if(s.at(i) !='0' && s.at(i) !='1')
+if(s.at(i) !='0' && s.at(i) !='1') // at(i)m->accessing each character
 {
 cout<<"input binary number "<<s<<" is incorrect,programe will end"<<endl;
 exit(0);
