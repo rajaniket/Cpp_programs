@@ -2,8 +2,7 @@
 
 #include<iostream>
 using namespace std;
-int read_matrix(int column,int row=4){
-    int a[row][column];
+void read_matrix(int a[][10],int column,int row=4){
     for(int i=0;i<row;i++)
         for(int j=0;j<column;j++)
         cin>>a[i][j];
@@ -11,13 +10,16 @@ int read_matrix(int column,int row=4){
          for(int i=0;i<row;i++){
             cout<<endl;
         for(int j=0;j<column;j++)
-        cout<<a[i][j];
+        cout<<a[i][j]<<" ";
          }
 
 }
 int main()
 {
-    cout<<"type all matrix elements \n"<<endl;
-    read_matrix(4);
+     int r,c;
+    cin>>r>>c;
+    int arr[r][10];
+    cout<<"Enter elements\n"<<endl;
+    read_matrix(arr,r,c);
 
 }
