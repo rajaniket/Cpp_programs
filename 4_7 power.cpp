@@ -5,7 +5,7 @@
 #include<stdio.h>
 using namespace std;
 
-float power(double m,int n=2)
+float power(double m,int n=2) // default argument is n=2
 {
    if(n==0)
     return 1;
