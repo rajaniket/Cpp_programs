@@ -4,19 +4,19 @@
 #include<stdio.h>
 using namespace std;
 
-int area(int a,int b)
+int area(int a,int b) // Rectangle
 {
       return a*b;
 }
-int area(int s)
+int area(int s) // square
 {
       return s*s;
 }
-float area(double r)
+float area(double r) //circle
 {
       return (3.14*r*r);
 }
-float area(float h,float b)
+float area(float h,float b) //triangle
 {
       return ((h*b)/2);
 }
