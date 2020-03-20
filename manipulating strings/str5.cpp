@@ -26,7 +26,7 @@ public:
    }};
    int main(){
    str s1,s2("Aniket "),s3("Raaaaaj");
-   s1=s2.add(s3);
+   s1=s2.add(s3); // this will return an object
    s2.display();
    s3.display();
    s1.display();
