@@ -15,6 +15,8 @@ int main()
     cout << "You entered: " << str1<<endl<<str<< endl;
     int  b=str1.length();
     int a=strlen(str);
-    cout<<"size of string:\n"<<b<<endl<<a;
+   // let string=> aniket
+    cout<<"size of string(str1.length & strlen):\n"<<b<<endl<<a<<endl ;  // 6  and  6
+    cout<<"sizeof :"<<sizeof(str); // 100
     return 0;
 }
