@@ -1,4 +1,5 @@
-//Crate a class FLOAT that contains one float data member. Overload all the four arithmetic operators so that they operate on the objects of FLOAT.
+//Crate a class FLOAT that contains one float data member.
+//Overload all the four arithmetic operators so that they operate on the objects of FLOAT.
 #include <iostream>
 using namespace std;
 class FLOAT{
@@ -18,7 +19,8 @@ return num*k.num;
 float operator/(FLOAT k){
 return num/k.num;
 }
-operator float(){return num;}
+operator float()
+{return num;}
 };
 int main(){
 FLOAT a(100),b(10),c;
