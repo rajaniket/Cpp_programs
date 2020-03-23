@@ -2,7 +2,8 @@
 // using casting operator function which return destination class object and should be define inside source class
 #include <iostream>
 using namespace std;
-// Taking ABCD as a source class, and we are defining it over abc ,because in class abc is needed it and exact size and other things will required intially
+// Taking ABCD as a source class, and we are defining it over abc ,
+// because in the class abcd it is needed with exact size and other things will required intially
 // That's why we are defining abcd instead of declearing in it on top; 
 class abcd{
 int b;
