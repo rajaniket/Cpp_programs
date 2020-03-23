@@ -12,7 +12,7 @@ for(int i=0;i<=9;i++){
 }}
 //friend int operator[](arr f,int k);
 int operator[](int k){
-return a[k];
+return a[k]; // returning private data
 }
 };
 
