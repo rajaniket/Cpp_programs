@@ -24,7 +24,7 @@ class y{
     friend void swap_obj(y *a,x *b);
 };
 
-void swap_obj(x *a,y *b){
+void swap_obj(x *a,y *b){ //Function overloading
 int h;
 h=a->s;
 a->s=b->c;
