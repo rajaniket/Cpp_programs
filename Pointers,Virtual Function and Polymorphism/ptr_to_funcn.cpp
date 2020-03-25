@@ -13,7 +13,7 @@
  return a*b;
  }
  int main(){
- int (*foo[])(int,int)={add,sub,mul};   // array of pointers to function
+ int (*foo[])(int,int)={add,sub,mul};   // array of pointers to function ,0->add,1->sub,2->mul
  int q,a=10,b=7;
  cout<<"Enter 1 for addition\nEnter 2 for subtraction\nEnter 3 for Multiplication"<<endl;
  cin>>q;
