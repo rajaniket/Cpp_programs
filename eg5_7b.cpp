@@ -13,12 +13,6 @@ minutes=m;
 }
 void showtime()
 {
-/* int x;
-x=hours;
-hours=minutes/60;
-minutes=minutes%60;
-hours=x+hours;
-*/
 cout<<"The time is "<<hours<<" hours and "<<minutes<<" minutes. "<<endl;
 }
 Time addtime(Time x)
