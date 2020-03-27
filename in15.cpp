@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 float comp(float a,float b,float c){
-//(a>b) ? (a>c) ? return a : return b : (b>c) ? return b : return c; // this is wrong because return a is statement not an expression
+//(a>b) ? (a>c) ? return a : return b : (b>c) ? return b : return c; // this is wrong because "return a" is a statement not an expression
 return (a>b) ? (a>c) ? a : b : (b>c) ? b : c;
 }
 int main(){
