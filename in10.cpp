@@ -9,12 +9,12 @@ while(a!=0){
   k=a%10;
   if((k!=1)&&(k!=0) ){
  cout<<"you have entered wrong decimal number"<<endl;
-   exit(0);}
+   exit(0);} //Program end
   a=a/10;
   l=l+k*pow(2,c);
   c++;
 }
-return l;
+return l; //returning decimal equivalent
 }
 
 int main ()
