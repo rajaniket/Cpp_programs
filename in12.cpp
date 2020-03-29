@@ -1,4 +1,5 @@
 //Generate Armstrong number in given range
+//153=1^3+5^3+3^3
 #include<iostream>
 #include<math.h>
 using namespace std;
