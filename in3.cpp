@@ -8,7 +8,7 @@ cout<<"Enter 1st Number"<<endl;
 cin>>x;
 cout<<"Enter 2nd number"<<endl;
 cin>>y;
-if(x^y)
+if(x^y)//Bitwise XOR operator
 cout<<x<<" and "<<y<<" are not equal"<<endl;
 else
 cout<<x<<" and "<<y<<" are equal"<<endl;
