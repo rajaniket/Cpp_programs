@@ -1,4 +1,5 @@
 //Check a number is palindrome or not
+//123454321 is a palindrome
 #include<iostream>
 #include<math.h>
 using namespace std;
@@ -17,7 +18,7 @@ cout<<c<<" is not a palindrome"<<endl;
 }
 int main()
 {
-    int a;
+ int a;
 cout<<"type number:"<<endl;
 cin>>a;
 palindrome(a);
