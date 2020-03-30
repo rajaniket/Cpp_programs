@@ -4,7 +4,7 @@ using namespace std;
 int main()
 {
    int x1=0,x2=1,x3,x;
-   cout<<"Type number of terms:-";
+   cout<<"Enter number of terms:-";
    cin>>x;
    cout<<endl;
    cout<<"Fibonacci series upto "<<x<<" term :- ";
