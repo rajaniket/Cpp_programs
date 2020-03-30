@@ -18,7 +18,7 @@ k=a%10;
 a=a/10;
 l=l+k;
 }
-super_digit(l);
+super_digit(l);  //recursion
 }
 int main(){
 cout<<"Type Number"<<endl;
