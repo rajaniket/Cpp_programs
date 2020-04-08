@@ -16,7 +16,7 @@ cin>>a[i][j];
 
 void multiply(matrix c,matrix b){
 int q,w;
-if(c.y==b.x){
+if(c.y==b.x){ 
 x=c.x;
 y=b.y;
 for(int i=0;i<x;i++){
@@ -26,7 +26,7 @@ for(int k=0;k<c.y;k++)
 a[i][j]=a[i][j]+(c.a[i][k])*(b.a[k][j]);
 }}
 }
-else cout<<"\nMatrix can't be multiply"<<endl;
+else cout<<"\nMatrix can't be multiply"<<endl;  //number of columns in the first matrix must be equal to the number of rows in the second matrix
 }
 
 void display(){
