@@ -7,7 +7,7 @@ int main()
     int*p = new int[10];   // allocation of memory
     cout<<p<<endl;
     for (int i = 0; i < 10; ++i) {
-            p[i]= i+1;}
+            p[i]= i+1;} // p[0]=1,p[1]=2;
     for (int i = 0; i < 10; ++i) {
             cout << p[i] << "  ";}
     cout << endl;
