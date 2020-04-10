@@ -12,7 +12,7 @@ int n, i = 0, c;
 cout<<"type number of terms : ";
 cin>>n;
 cout<<"\nFibonacci series\n";
-for ( c = 1 ; c <= n ; c++ )
+for (c = 1;c<=n;c++ )
 {
 cout<<fib(i);
 i++;
