@@ -39,7 +39,7 @@ else{
 float drw;
 cout<<"Enter amount to withdraw : ";
 cin>>drw;
-balance=balance-abs(drw);
+balance=balance-abs(drw); // absolute value 
 cout<<"Your current balance is "<<balance<<" rupee. "<<endl;
 }}
 void display(){
