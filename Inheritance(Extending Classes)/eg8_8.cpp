@@ -4,7 +4,7 @@
 using namespace std;
 class alpha{
 protected:
-    int x,q;    // x will initialized first then q will be
+    int x,q;    // x will initialized first then q will be  (initialization list)
 public:
     alpha(int c):x(c),q(2*x){    // alpha(int c):q(2),x(q) , will be wrong because x will be initialize first then q will initialize as per
                                                                                                             // deceleration in data segment
@@ -20,7 +20,7 @@ class beta{
 protected:
     int y,w;
 public:
-    beta(int c):y(3*c),w(c+y){
+    beta(int c):y(3*c),w(c+y){ // initializing y and w
     cout<<"beta initialized"<<endl;
     }
     void show(){
