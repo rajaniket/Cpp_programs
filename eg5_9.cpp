@@ -21,7 +21,7 @@ void getdata(int x){
 data=x;
 }
 private:
-friend int add(s1,s2);
+friend int add(s1,s2); //declearing friend function 
 };
 int add(s1 a, s2 b){
 int y;
