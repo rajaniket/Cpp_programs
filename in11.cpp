@@ -1,4 +1,5 @@
 //check whether number is armstrong or not
+// 1634=1^4+6^4+3^4+4^4
 #include<iostream>
 #include<math.h>
 using namespace std;
