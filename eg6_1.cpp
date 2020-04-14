@@ -16,7 +16,7 @@ cout<<"X= "<<x<<" Y= "<<y<<endl;
 };
 int main(){
 abc a(123,456);
-abc b=abc(456,123);
+abc b=abc(456,123);  // parametrize 
 cout<<"object 'a' :"<<endl;
 a.display();
 cout<<"object 'a' :"<<endl; 
