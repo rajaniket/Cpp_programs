@@ -17,7 +17,7 @@ void display()
 cout<<"count: "<<count<<endl;
 }
 };
-int item :: count=1;
+int item :: count=1; // static value should be declared outside the class
 int main()
 {
 item a,b,c;
