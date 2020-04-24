@@ -20,7 +20,7 @@ void your::printname()
 }
 int main() {
 	your obj1;
-	*(obj1.g)= "raj"; // accessing pointer member 
+	*(obj1.g)= "raj"; // accessing pointer member of a class
 	obj1.id=15;
 	obj1.printname();
 	cout << endl;
