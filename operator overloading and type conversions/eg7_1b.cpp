@@ -14,7 +14,7 @@ public:
 
 
 };
-void operator-(abc &a)
+void operator-(abc &a) // - operator overloading 
     {
         a.x=-a.x;
         a.y=-a.y;
