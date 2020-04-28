@@ -17,7 +17,7 @@ public:
     p=k;
         }
    void add(str &j1,str&j2){
-   delete []p;
+   delete []p; // deallocating 
    length=strlen(j1.p)+strlen(j2.p)+1;
     p=new char[length];
    strcpy(p,j1.p);
