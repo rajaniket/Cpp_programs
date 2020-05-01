@@ -1,4 +1,8 @@
-
+// Two pointer Approach
+// Find out all possible pairs from a sorted array ,which sum gives desired value
+// array => 0,1,2,3,4,5,6,7,8,9,10
+// input=> sum=11
+// output=>(1,10) (2,9) (3,8) (4,7) (5,6)
 #include<iostream>
 #include<string.h>
 using namespace std;
