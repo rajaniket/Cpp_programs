@@ -17,25 +17,22 @@ Alternatively, we can also swap the b's to make "aaaa". The final answer remains
 */
 
 
-#include<iostream>
-#include<string.h>
-using namespace std;
 int main(){
-	int k;
-  	cin>>k;
-    string str;
-    cin>>str;
-    int left=0, ans=0;
-    int count[2] = {0};
-    for (int i=0;i < str.length();i++) {
-        char c =str[i];
-        count[c-'a']++;
-        if(min(count[0], count[1]) > k) {
-            count[str[left]-'a']--;
-            left++;
-        } else {
-            ans++;
-        }
+    int k;
+    cin>>k;
+    string s;
+    cin>>s;
+    int ab_count[2]={0}; // it will store no of a and b 
+    int current_length=0; // it will note maximum length 
+    int i=0; // i-> left , j->right
+    for(int j=0;j<s.length();j++){
+    ab_count[s[j]-'a']++;  // counting a and b
+    if(min(ab_count[0],ab_count[1])<=k) // if minimum from both count is < = k then current_length increases otherwise shift i to forward
+     current_length++;
+    else{
+        ab_count[s[i]-'a']--;  // eliminating the count of i location for the sake of k
+        i++;
     }
-    cout<<ans;
     }
+    cout<<current_length<<endl;
+}
