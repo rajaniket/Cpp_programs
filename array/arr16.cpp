@@ -29,11 +29,9 @@ for(int i=0;i<n;i++){
     for(int j=0;j<n-i;j++){
             cout<<endl;
             int p=j;
-       for(int k=j;k>=0+j;k++){
+       for(int k=i;k>=0;k--){
       cout<<input[p++]<<" ";
-}
+}}}}
 
-}}
-}
 */
 
