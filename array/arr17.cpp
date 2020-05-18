@@ -1,10 +1,11 @@
+// factorial of a large number 
 
 #include<iostream>
 #include<vector>
 #include<math.h>
 using namespace std;
 #define MAX 500
-int multiply(int n,int *a,int Count){
+int multiply(int n,int *a,int Count){   // this function will multiply incoming number n with number present in array 
 int k,carry=0;
 for(int i=0;i<Count;i++){
     k=(a[i]*n)+carry;
@@ -12,12 +13,12 @@ for(int i=0;i<Count;i++){
     carry=k/10;
 }
 
-while(carry){
+while(carry){   // if there is carry means it needs to increase a size of array to keep it  (count)
 a[Count]=carry%10;
 carry=carry/10;
 Count++;
 }
-return Count;
+return Count;  
 }
 
 void fact(int n){
