@@ -1,8 +1,7 @@
+/*
 Given an array A of 0s and 1s, we may change up to K values from 0 to 1.
 
 Return the length of the longest (contiguous) subarray that contains only 1s. 
-
- 
 
 Example 1:
 
@@ -25,3 +24,22 @@ Note:
 1 <= A.length <= 20000
 0 <= K <= A.length
 A[i] is 0 or 1 
+*/
+class Solution {
+public:
+    int longestOnes(vector<int>& A, int K) {
+        int n=A.size();
+        int max=0,left=0;
+        int s[2]={0};
+        for(int i=0;i<n;i++){
+            s[A[i]]++;
+            if(min(s[0],s[1])<=K)
+                max++;
+            else{
+                 s[A[left]]--;
+                 left++;
+                } 
+        }
+        return max;
+    }
+};
