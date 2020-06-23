@@ -3,14 +3,13 @@
 #include<iostream>
 using namespace std;
 class box {
-static int count;
+static int count;  // it will store how many times constructer has been used.
 double length,width,height;
 public:
 box(double l=2.0, double b=3.0, double c=4.0){
 count++;
 cout<<"count = "<<count<<endl;
 cout<<"constructor called"<<endl;
-//cout<<"count = "<<count++<<endl; 
 length=l;
 width=b;
 height=c;
