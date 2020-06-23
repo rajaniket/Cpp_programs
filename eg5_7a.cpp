@@ -21,10 +21,9 @@ hours=x+hours;
 
 cout<<"The time is "<<hours<<" hours and "<<minutes<<" minutes. "<<endl;
 }
-void addtime(Time x,Time y)
+void addtime(Time x,Time y) // object as an argument 
 {
-
-hours=x.hours + y.hours;
+hours=x.hours + y.hours;  
 minutes=x.minutes + y.minutes;
 }
 };
