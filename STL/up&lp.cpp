@@ -9,7 +9,7 @@ cin>>key;
 bool result=binary_search(arr,arr+n,key);
 if(result){
 cout<<"Present"<<endl;
-auto LB=lower_bound(arr,arr+n,key);  
+auto LB=lower_bound(arr,arr+n,key);  //  you can take int* in place of auto
 int index_lb=LB-arr;
 cout<<"Lower Bound index is "<<index_lb<<" and the number is "<<arr[index_lb]<<endl; 
 int* UB=upper_bound(arr,arr+n,key);
@@ -18,7 +18,7 @@ if(index_ub==n)
     cout<<"UB is not Possible"<<endl;
 else
 cout<<"Upper Bound index is "<<index_ub<<" and the number is "<<arr[index_ub]<<endl;   
-cout<<"Frequency of "<<key<<" is "<<UB-LB;
+cout<<"Frequency of "<<key<<" is "<<UB-LB; //  subtracting UB and LB will give number of Key prsent in the array 
 }
 else cout<<"Not Present"<<endl;
 }
